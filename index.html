@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Время тень</title>
+    <title>Доска воспоминаний</title>
     <link rel="stylesheet" href="stylesheet/style.css">
     <script src="javascript/jquery-3.7.1.js" charset="UTF-8"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -16,12 +16,10 @@
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <div class="top_bar">
-        <a href="https://antons0vv.github.io/v-t.archive/"><button class="text" id="vtBtn">время тень</button></a>
-        <button class="text" id="plusBtn">+</button>
-        <button class="text" id="aboutBtn">о проекте</button>
-
+        <!-- <button class="text" id="plusBtn">+</button> -->
+        <button class="text" id="aboutBtn">о доске</button>
     </div>
-    <div class="ovals">
+    <!-- <div class="ovals">
         <svg id="oval_1" width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path id="anim" class="path_1" d="M62.5, 16 m-61.5, 0 a 61.5, 15 0 1,0 123,0 a 61.5, 15 0 1,0 -123,0 "
                 stroke="black">
@@ -31,7 +29,7 @@
                 stroke="black">
             </path>
         </svg>
-    </div>
+    </div> -->
     <div class="scans">
         <img id="post_easter" class="scan several spring" src="img/открытка-15.png" alt="">
         <img id="peace" class="scan only winter" src="img/билет.png" alt="">
@@ -93,11 +91,13 @@
 
     <div class="popup About popupOn">
         <button class="text close" type="button">×</button>
-        <p class="text textAbout">v-t.acrhive/board&nbsp;&mdash; это сайт-архив воспоминаний. На&nbsp;нём можно найти
+        <p class="text textAbout">Это сайт-архив воспоминаний. На&nbsp;нём можно найти свои
             объекты
             из&nbsp;прошлого.
-            Они загружены разными людьми и&nbsp;дополнены историями. Также здесь каждый можеть оставить свои письменные
-            воспоминания.</p>
+            Они загружены через телеграм-бота и&nbsp;дополнены историями. Анимация зависит от&nbsp;времени года
+            и&nbsp;типа
+            воспоминания.
+        </p>
     </div>
     <div class="popup desScan popupOff">
         <button class="text close" type="button">×</button>
