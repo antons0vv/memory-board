@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Время тень</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="javascript/jquery-3.7.1.js" charset="UTF-8"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="javascript/p5.min.js"></script>
+    <script src="javascript/main.js" type="module" charset="UTF-8"></script>
+    <script src="javascript/animation.js" charset="UTF-8"></script>
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <div class="top_bar">
+        <a href="https://antons0vv.github.io/v-t.archive/"><button class="text" id="vtBtn">время тень</button></a>
+        <button class="text" id="plusBtn">+</button>
+        <button class="text" id="aboutBtn">о проекте</button>
+
+    </div>
+    <div class="ovals">
+        <svg id="oval_1" width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="anim" class="path_1" d="M62.5, 16 m-61.5, 0 a 61.5, 15 0 1,0 123,0 a 61.5, 15 0 1,0 -123,0 "
+                stroke="black">
+        </svg>
+        <svg id="oval_2" width="125" height="32" viewBox="0 0 125 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="anim" class="path_2" d="M62.5, 16 m-61.5, 0 a 61.5, 15 0 1,0 123,0 a 61.5, 15 0 1,0 -123,0 "
+                stroke="black">
+            </path>
+        </svg>
+    </div>
+    <div class="scans">
+        <img id="post_easter" class="scan several spring" src="img/открытка-15.png" alt="">
+        <img id="peace" class="scan only winter" src="img/билет.png" alt="">
+        <img id="icon1" class="scan only summer" src="img/икона-42.png" alt="">
+        <img id="cap" class="scan several autumn" src="img/крыжечка.png" alt="">
+        <img id="card1" class="scan several winter" src="img/мал-карта-1.png" alt="">
+        <img id="sketch1" class="scan only summer" src="img/блокнок2.png" alt="">
+        <img id="sticker1" class="scan several winter" src="img/sticker2.png" alt="">
+        <img id="sketch2" class="scan only spring" src="img/notebook.png" alt="">
+        <img id="post_porte" class="scan several winter" src="img/открытка-7.png" alt="">
+        <img id="book_shishkan" class="scan only autumn" src="img/book-shish.png" alt="">
+        <img id="braclet1" class="scan only summer" src="img/фенечка-2.png" alt="">
+        <img id="post_girl" class="scan only spring" src="img/открытка-4.png" alt="">
+        <img id="money" class="scan several summer" src="img/деньги.png" alt="">
+        <img id="cat" class="scan only summer" src="img/кот-1-1.png" alt="">
+        <img id="post_africa" class="scan only spring" src="img/открытка_африка.png" alt="">
+        <img id="polaroid" class="scan only summer" src="img/фото.png" alt="">
+        <img id="basquiat" class="scan only winter" src="img/баския.png" alt="">
+        <img id="card2" class="scan several winter" src="img/мал-карта-0.png" alt="">
+        <img id="baby" class="scan only autumn" src="img/бэбик.png" alt="">
+        <img id="vgik" class="scan several autumn" src="img/вгик.png" alt="">
+        <img id="georgia1" class="scan several summer" src="img/закладка.png" alt="">
+        <img id="tree" class="scan only spring" src="img/дерево.png" alt="">
+        <img id="ticket" class="scan only summer" src="img/билетик_старый.png" alt="">
+        <img id="braclet2" class="scan only summer" src="img/браслетик.png" alt="">
+        <img id="icon2" class="scan only spring" src="img/икона-1.png" alt="">
+        <img id="post_cat" class="scan several spring" src="img/открытка-18.png" alt="">
+        <img id="sticker2" class="scan several winter" src="img/sticker.png" alt="">
+        <img id="scrap" class="scan several autumn" src="img/скрепка.png" alt="">
+        <img id="sketch3" class="scan only winter" src="img/блокнок.png" alt="">
+        <img id="tram" class="scan only spring" src="img/IMG_4927.png" alt="">
+        <img id="card3" class="scan several winter" src="img/мал-карта-6.png" alt="">
+        <img id="moomin" class="scan several summer" src="img/карточка.png" alt="">
+        <img id="post_catstar" class="scan several spring" src="img/грибы.png" alt="">
+        <img id="nice1" class="scan several winter" src="img/ницца2.png" alt="">
+        <img id="card4" class="scan several winter" src="img/мал-карта-1.png" alt="">
+        <img id="kino" class="scan only autumn" src="img/кинцо.png" alt="">
+        <img id="ipod" class="scan several autumn" src="img/плеер.png" alt="">
+        <img id="tel_aviv" class="scan several spring" src="img/tel-aviv.png" alt="">
+        <img id="post_sheep" class="scan several winter" src="img/открытка-8.png" alt="">
+        <img id="sochi" class="scan only summer" src="img/блокнот.png" alt="">
+        <img id="msk_t1" class="scan several summer" src="img/ткарта-москва3.png" alt="">
+        <img id="envelope" class="scan only winter" src="img/конверт.png" alt="">
+        <img id="ticket_air1" class="scan several summer" src="img/ткарты.png" alt="">
+        <img id="georgia2" class="scan several summer" src="img/грузия2.png" alt="">
+        <img id="matches" class="scan several winter" src="img/спички.png" alt="">
+        <img id="nice2" class="scan only spring" src="img/ницца.png" alt="">
+        <img id="card5" class="scan several winter" src="img/мал-карта-6.png" alt="">
+        <img id="msk_t2" class="scan several summer" src="img/ткарта-москва2.png" alt="">
+        <img id="post_mushrooms" class="scan several spring" src="img/грибы2.png" alt="">
+        <img id="ticket_air2" class="scan only winter" src="img/билетик-3.png" alt="">
+        <img id="istanbul" class="scan several autumn" src="img/стамбул.png" alt="">
+        <img id="paper_summer" class="scan only summer" src="img/бумажечка.png" alt="">
+        <img id="braclet3" class="scan only summer" src="img/фенечка-1.png" alt="">
+        <img id="icon3" class="scan only spring" src="img/икона-82.png" alt="">
+        <img id="book1" class="scan several autumn" src="img/грузия.png" alt="">
+        <img id="post_green" class="scan several autumn" src="img/открытка-6.png" alt="">
+    </div>
+
+    <div class="popup About popupOn">
+        <button class="text close" type="button">×</button>
+        <p class="text textAbout">v-t.acrhive/board&nbsp;&mdash; это сайт-архив воспоминаний. На&nbsp;нём можно найти
+            объекты
+            из&nbsp;прошлого.
+            Они загружены разными людьми и&nbsp;дополнены историями. Также здесь каждый можеть оставить свои письменные
+            воспоминания.</p>
+    </div>
+    <div class="popup desScan popupOff">
+        <button class="text close" type="button">×</button>
+        <div class="imgScanPopup"><img class="scanPopup" src="img/грузия2.png" alt=""></div>
+        <div class="textPopup">
+            <p class="text scanName scantextPopup">Name</p>
+            <p class="text scanDate scantextPopup">Date</p>
+            <p class="text scanDesc scantextPopup">Description</p>
+        </div>
+    </div>
+    <div class="popup addStory popupOff">
+        <button class="text close" type="button">×</button>
+        <textarea type="text" name="storyBox" cols="30" rows="10" class="storyTextDiv text"></textarea>
+        <div class="textStory">
+            <input type="text" name="Name" placeholder="Название" class="text addName scantextPopup">
+            <input type="date" name="Date" class="text addDate scantextPopup">
+            <button class="text submStory" type="submit">Создать воспоминание</button>
+        </div>
+    </div>
+    <div class="animation_container_2"></div>
+    <div class="animation_container_1"></div>
+
+</body>
+
+</html>
