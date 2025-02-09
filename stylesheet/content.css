@@ -27,6 +27,9 @@
         width: 70%;
     }
 
+    .popup {
+        text-align: left;
+    }
 }
 
 @media (orientation: portrait) {
@@ -39,10 +42,10 @@
         height: 80%;
     }
 
-    .textPopup {
+    /* .textPopup {
         align-self: start;
         margin-left: 10%;
-    }
+    } */
 
     .addStory {
         flex-direction: column;
@@ -58,6 +61,9 @@
         width: 85%;
     }
 
+    .popup {
+        text-align: center;
+    }
 }
 
 @media (min-width:316px) {
@@ -290,6 +296,7 @@ button {
 
 .popup {
     display: flex;
+
     position: fixed;
     background-color: #D9D9D9 0.9;
 
@@ -304,7 +311,7 @@ button {
     border-radius: 2px;
     padding: 35px 15px 35px 15px;
 
-    text-align: left;
+    /* text-align: left; */
 
     z-index: 1000;
 

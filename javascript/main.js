@@ -84,30 +84,6 @@ $(document).ready(function () {
     });
 
 
-    //Ovals animation
-
-    $("#aboutBtn").mouseover(function () {
-        $(".path_2").css("opacity", "1").animate({
-            'stroke-dashoffset': 0
-        }, 400, 'easeInOutCubic');
-
-    }).mouseleave(function () {
-        $(".path_2").css({
-            "stroke-dashoffset": "340", "opacity": "0"
-        });
-    });
-
-    $("#vtBtn").mouseover(function () {
-        $(".path_1").css("opacity", "1").animate({
-            'stroke-dashoffset': 0
-        }, 400, 'easeInOutCubic');
-
-    }).mouseleave(function () {
-        $(".path_1").css({
-            "stroke-dashoffset": "340", "opacity": "0"
-        });
-    });
-
     // Description Popup
 
     $(".scan").click(function () {

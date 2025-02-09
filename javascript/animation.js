@@ -125,16 +125,16 @@ function setup() {
             for (let i = 0; i < count; i++) {
                 mods[i].update();
                 if (winter) {
-                    fill(84, 222, 231);
+                    fill(158, 241, 255);
                 }
                 if (spring) {
-                    fill(227, 18, 131);
+                    fill(182, 158, 255);
                 }
                 if (summer) {
-                    fill(129, 233, 164);
+                    fill(148, 254, 164);
                 }
                 if (autumn) {
-                    fill(255, 220, 94);
+                    fill(254, 253, 148);
                 }
                 mods[i].draw();
             }
@@ -144,16 +144,16 @@ function setup() {
             for (let i = 0; i < circles.length; i++) {
                 circles[i].update();
                 if (winter) {
-                    fill(84, 222, 231);
+                    fill(158, 241, 255);
                 }
                 if (spring) {
-                    fill(227, 18, 131);
+                    fill(182, 158, 255);
                 }
                 if (summer) {
-                    fill(129, 233, 164);
+                    fill(148, 254, 164);
                 }
                 if (autumn) {
-                    fill(255, 220, 94);
+                    fill(254, 253, 148);
                 }
                 circles[i].draw();
             }
