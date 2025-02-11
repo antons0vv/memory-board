@@ -219,6 +219,11 @@ body {
     background-color: #EFEFEF;
 }
 
+.scan {
+    max-height: 500px;
+    min-height: 200px;
+}
+
 .text {
     font-family: "Wremena";
     line-height: 110%;

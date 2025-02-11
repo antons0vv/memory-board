@@ -16,7 +16,6 @@ $(document).ready(function () {
 
     $(".scan").draggable({ stack: ".scan" });
 
-
     // About popup
 
     $("#aboutBtn").click(function () {
@@ -83,7 +82,6 @@ $(document).ready(function () {
         }
     });
 
-
     // Description Popup
 
     $(".scan").click(function () {
@@ -96,25 +94,7 @@ $(document).ready(function () {
 
         if ($("#" + imageId).width() < $("#" + imageId).height()) {
             $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "100%", "height": "100%" });
-        } else if (imageId == "basquiat") {
-            $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "100%", "height": "100%" });
-        }
-        else if (imageId == "sticker2") {
-            $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "90%", "height": "90%" });
-        }
-        else if (imageId == "nice2") {
-            $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "100%", "height": "100%" });
-        }
-        else if (imageId == "matches") {
-            $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "100%", "height": "100%" });
-        }
-        else if (imageId == "kino") {
-            $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "100%", "height": "100%" });
-        }
-        else if (imageId == "peace") {
-            $(".scanPopup").css({ "rotate": "0" + "deg", "object-fit": "contain", "width": "80%", "height": "80%" });
-        }
-        else {
+        } else {
             $(".scanPopup").css({ "rotate": "-90" + "deg", "object-fit": "contain", "width": "120%", "height": "120%" });
         };
 
