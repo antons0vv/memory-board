@@ -120,21 +120,21 @@ function setup() {
     }
 
     draw = function () {
-        background(239);
+        background(80);
         if (animationRunning) {
             for (let i = 0; i < count; i++) {
                 mods[i].update();
                 if (winter) {
-                    fill(158, 241, 255);
+                    fill(220, 220, 220);
                 }
                 if (spring) {
-                    fill(182, 158, 255);
+                    fill(220, 220, 220);
                 }
                 if (summer) {
-                    fill(148, 254, 164);
+                    fill(220, 220, 220);
                 }
                 if (autumn) {
-                    fill(254, 253, 148);
+                    fill(220, 220, 220);
                 }
                 mods[i].draw();
             }
@@ -144,16 +144,16 @@ function setup() {
             for (let i = 0; i < circles.length; i++) {
                 circles[i].update();
                 if (winter) {
-                    fill(158, 241, 255);
+                    fill(220, 220, 220);
                 }
                 if (spring) {
-                    fill(182, 158, 255);
+                    fill(220, 220, 220);
                 }
                 if (summer) {
-                    fill(148, 254, 164);
+                    fill(220, 220, 220);
                 }
                 if (autumn) {
-                    fill(254, 253, 148);
+                    fill(220, 220, 220);
                 }
                 circles[i].draw();
             }
